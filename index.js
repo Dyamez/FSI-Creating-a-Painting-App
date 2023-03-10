@@ -8,14 +8,15 @@ blue.addEventListner('click', (e) => {
 })
 */
 
-let color = 'white';
+let color = 'gray';
+
 
 let colors = ['blue', 'red', 'yellow', 'green'];
-for (let i = 0; i < colors.length, i++) {
+for (let i= 0; i < colors.length; i++) {
     const chooser = document.querySelector('#' + colors[i]);
     chooser.addEventListener('click', () => { 
     color = colors[i];
-})
+});
 }
 
 painting.addEventListener('click', (e) => {
